@@ -152,6 +152,10 @@ public class SystemWebViewEngine implements CordovaWebViewEngine {
         settings.setJavaScriptCanOpenWindowsAutomatically(true);
         settings.setLayoutAlgorithm(LayoutAlgorithm.NORMAL);
 
+        // Enable the webview to scale content down to the display size
+        settings.setUseWideViewPort(true);
+        settings.setLoadWithOverviewMode(true);
+              
         /**
          * https://developer.android.com/reference/android/webkit/WebSettings#setAllowFileAccess(boolean)
          * 
